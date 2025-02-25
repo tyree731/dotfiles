@@ -1,0 +1,33 @@
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[commit]
+	verbose = true
+[core]
+	excludesfile = ~/.gitignore
+[diff]
+	tool = difftastic
+	external = difft
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[init]
+	defaultBranch = main
+[pager]
+	difftool = true
+[rebase]
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[tag]
+	sort = version:refname
+[user]
+	name = Stephen Tyree
+	email = tyree731@gmail.com
